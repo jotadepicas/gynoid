@@ -1,0 +1,54 @@
+{
+  "version": "2.0",
+  "name": "kibana",
+  "script": "index.js",
+  "actions": [
+    {
+      "function": "sendAttachment",
+      "type": "text",
+      "aliases": [
+        "get :serviceName([^\\s]+)"
+      ],
+      "acls": {
+        "mention": true
+      }
+    },
+    {
+      "function": "react",
+      "type": "text",
+      "aliases": [
+        "react"
+      ],
+      "acls": {
+        "mention": true
+      }
+    },
+    {
+      "function": "unreact",
+      "type": "text",
+      "aliases": [
+        "unreact"
+      ],
+      "acls": {
+        "mention": true
+      }
+    },
+    {
+      "function": "hello",
+      "type": "text",
+      "aliases": [
+        "hello"
+      ],
+      "premessage": [
+        "_Saying hi_",
+        "_Saying hi2_",
+        "_Saying hi3_",
+        "_Saying hi4_"
+        ],
+      "acls": {
+        "channels": ["gynoid-playground"],
+        "acceptsDm": false
+      }
+    }
+  ]
+}

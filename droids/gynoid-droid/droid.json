@@ -1,0 +1,156 @@
+{
+  "name": "gynoid",
+  "script": "index.js",
+  "actions": [
+    {
+      "function": "registerGynoid",
+      "aliases": [
+        "register :name([^\\s]+) :token([^\\s]+)",
+        "register :name([^\\s]+) using :token([^\\s]+)",
+        "start :name([^\\s]+) :token([^\\s]+)",
+        "start :name([^\\s]+) using :token([^\\s]+)"
+      ],
+      "help": "`register {bot} using {token}`: registers and initializes a bot using a Token",
+      "premessage": "_Initializing gynoid..._",
+      "acls": {
+        "mention": true
+      }
+    },
+    {
+      "function": "unregisterGynoid",
+      "aliases": [
+        "unregister :name([^\\s]+)"
+      ],
+      "help": "`unregister {bot}`: disconnects and removes the bot from the registry",
+      "premessage": "Unregistering Droid...",
+      "acls": {
+        "mention": true
+      }
+    },
+    {
+      "function": "reloadGynoid",
+      "aliases": [
+        "reload :name([^\\s]+)"
+      ],
+      "help": "`reload {bot}`: reloads all extensions from the bot",
+      "premessage": "Reloading Gynoid...",
+      "acls": {
+        "mention": true
+      }
+    },
+    {
+      "function": "extendDroid",
+      "aliases": [
+        "extend :name([^\\s]+) :repo([^\\s]+)",
+        "extend :name([^\\s]+) from :repo([^\\s]+)"
+      ],
+      "help": "`extend {bot} from {repo}`: installs an extension from a GitHub repository",
+      "premessage": "Extending Droid...",
+      "acls": {
+        "mention": true
+      }
+    },
+    {
+      "function": "removeExtension",
+      "aliases": [
+        "remove extension :extension([^\\s]+) :name([^\\s]+)",
+        "remove extension :extension([^\\s]+) from :name([^\\s]+)"
+      ],
+      "help": "`remove extension {name} from {bot}`: removes the installed extensions from the bot",
+      "premessage": "Removing extension...",
+      "acls": {
+        "mention": true
+      }
+    },
+    {
+      "function": "listExtensions",
+      "aliases": [
+        "list extensions :name([^\\s]+)",
+        "list extensions for :name([^\\s]+)"
+      ],
+      "help": "`list extensions {bot}`: shows the installed extensions for the specified bot",
+      "premessage": "Listing extensions...",
+      "acls": {
+        "mention": true
+      }
+    },
+    {
+      "function": "listDroids",
+      "aliases": [
+        "list droids",
+        "list gynoids",
+        "list bots",
+        "list bots",
+        "get droids",
+        "get gynoids",
+        "get bots",
+        "get bots"
+      ],
+      "help": "`list droids`: gets the list of installed gynoids",
+      "premessage": "Listing gynoids...",
+      "acls": {
+        "mention": true
+      }
+    },
+    {
+      "function": "ping",
+      "aliases": [
+        "ping"
+      ],
+      "premessage": "Ping Droid..."
+    },
+    {
+      "function": "addKey",
+      "aliases": [
+        "add key :key([^\\s]+) :value([^\\s]+) to :droid([^\\s]+)",
+        "add key :key([^\\s]+) :value([^\\s]+) :droid([^\\s]+)"
+      ],
+      "help": "`add key {key} {value} to {bot}`: adds a key-value setting for the specified bot",
+      "acls": {
+        "mention": true
+      }
+    },
+    {
+      "function": "removeKey",
+      "aliases": [
+        "remove key :key([^\\s]+) from :droid([^\\s]+)",
+        "remove key :key([^\\s]+) :droid([^\\s]+)"
+      ],
+      "help": "`remove key {key} from {bot}`: removes a setting from the specified bot",
+      "acls": {
+        "mention": true
+      }
+    },
+    {
+      "function": "listKeys",
+      "aliases": [
+        "list keys for :droid([^\\s]+)",
+        "list keys :droid([^\\s]+)"
+      ],
+      "help": "`list keys for {bot}`: lists the key names associated with a bot",
+      "acls": {
+        "mention": true
+      }
+    },
+    {
+      "function": "listAllKeys",
+      "aliases": [
+        "list all keys"
+      ],
+      "acls": {
+        "mention": true
+      }
+    },
+    {
+      "function": "secure",
+      "aliases": [
+        "secure :channel([^\\s]+)"
+      ],
+      "premessage": "_Securing Gynoid..._",
+      "help": "`secure {channel}`: updates all functions ACL to only accept commands in the selected channel",
+      "acls": {
+        "mention": true
+      }
+    }
+  ]
+}

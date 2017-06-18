@@ -1,0 +1,34 @@
+{
+  "name": "gynoid-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive --timeout=10000",
+    "test:watch": "mocha --recursive --timeout=10000 --watch",
+    "cover": "nyc --all npm test",
+    "lint": "eslint **/*.*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "dotenv": "^4.0.0",
+    "eslint": "^3.19.0",
+    "jshint": "^2.9.4",
+    "mocha": "^3.2.0",
+    "nyc": "^10.2.0",
+    "sinon": "^2.1.0"
+  },
+  "dependencies": {
+    "@slack/client": "^3.9.0",
+    "clear-module": "^2.1.0",
+    "deep-clear-require": "verlic/deep-clear-require#v0.0.3",
+    "eventemitter3": "^2.0.3",
+    "lodash": "^4.17.4",
+    "nodecredstash": "^1.1.0",
+    "nodegit": "^0.18.1",
+    "rimraf": "^2.6.1"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "globals": {
+    "casper": true
+  },
+  "rules": {
+    "camelcase": 0,
+    "curly": ["error", "all"],
+    "no-bitwise": 2,
+    "eqeqeq": 2,
+    "wrap-iife": [
+      2,
+      "any"
+    ],
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "no-use-before-define": 0,
+    "new-cap": 0,
+    "no-caller": 2,
+    "no-undef": 2,
+    "strict": 0,
+    "no-unused-expressions": 2,
+    "no-eval": 2,
+    "dot-notation": 0,
+    "no-unused-vars": 2,
+    "comma-style": [
+      2,
+      "last"
+    ],
+    "no-irregular-whitespace": 2
+  }
+}

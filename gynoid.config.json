@@ -1,0 +1,6 @@
+{
+  "keys": {
+    "GITHUB_TOKEN": "",
+    "GYNOID_TOKEN": "{your-slack-bot-token}"
+  }
+}

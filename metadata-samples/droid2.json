@@ -1,0 +1,18 @@
+{
+  "version": "2.0",
+  "name": "kibana",
+  "script": "index.js",
+  "actions": [
+    {
+      "function": "parse",
+      "type": "attachment",
+      "field": "pretext",
+      "aliases": [
+        "API test run completed. \\<:testrun([^\\s]+)\\|[\\s\\S]*"
+      ],
+      "acls": {
+        "mention": true
+      }
+    }
+  ]
+}
