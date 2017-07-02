@@ -27,7 +27,7 @@ module.exports = class GynoidDroid {
     var name = req.params.name === 'me' ? 'gynoid' : req.params.name;
     this.cluster.reloadGynoid(name)
       .then(() => res.text(`Droid ${name} successfully reloaded`))
-      .catch((err) => res.text('Unable to reload Droid.\n```' + err + '```'));
+      .catch((err) => res.text('Unable to reload Droid.\n```' + err.stack + '```'));
   }
 
   extendDroid(req, res) {

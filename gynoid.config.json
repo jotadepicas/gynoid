@@ -1,6 +1,16 @@
 {
   "keys": {
-    "GITHUB_TOKEN": "",
-    "GYNOID_TOKEN": "{your-slack-bot-token}"
+    "GITHUB_TOKEN": "{personla-github-token}"
+  },
+  "gynoids": {
+    "gynoid": {
+      "name": "gynoid",
+      "token": "{slack-bot-token}",
+      "extensions": [
+        {
+          "name": "gynoid-droid"
+        }
+      ]
+    }
   }
 }
