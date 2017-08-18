@@ -23,7 +23,7 @@
     "nodegit": "^0.16.0",
     "rimraf": "^2.5.2",
     "semver": "^5.1.0",
-    "slack-robot": "auth0/slack-robot#v3.3.2"
+    "slack-robot": "jotadepicas/slack-robot"
   },
   "devDependencies": {
     "chai": "^3.5.0",
